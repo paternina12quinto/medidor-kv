@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="stilo.css">
+
+    
+</head>
+<body>
+<nav>
+<h1> Medidor de kv</h1>
+    
+    
+</nav>
+
+ <div class="entrada">   
+<input id="medida" type="text" placeholder="escriba la medida aqui">
+
+<button id="agregar"> agregar</button>
+</div>
+<div class="container" id="table">
+    <div class="col-12">
+    
+<table class="table">
+    <thead id="linea">
+        <tr>
+            <th>Fecha</th>
+<th>Medida</th>
+<th>Valor</th>
+<th>Total</th>
+        
+        </tr>
+
+        
+    </thead>
+
+        
+
+    <tbody id="tabla">
+    </tbody>
+</table>
+
+</div>
+</div>
+<div class="total-general">
+    <strong>Total acumulado:</strong>
+    <span id="totalGeneral">0</span>
+</div>
+<script src="funcion.js"></script>
+</body>
+</html>

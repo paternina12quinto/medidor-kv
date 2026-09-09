@@ -1,0 +1,50 @@
+input { 
+    border-radius: 50px; 
+    background-color: rgb(242, 245, 244); 
+    display: block; 
+    margin: 0; 
+    width: 200px; 
+    height: 70px; 
+    text-align: center; 
+    border: 4px solid rgba(20, 165, 232, 0.808); 
+}
+
+.entrada { 
+    margin-top: 100px; 
+    display: flex; 
+    justify-content: center;
+}
+
+nav { 
+    display: flex; 
+    justify-content: center; 
+    background-color: rgba(210, 31, 31, 0.788); 
+}
+
+body { 
+    background-color: rgba(121, 118, 118, 0.301); 
+}
+
+input::placeholder { 
+    color: rgb(12, 12, 12); 
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+button { 
+    margin-top: 13px; 
+    margin-left: 10px; 
+    border-radius: 60px; 
+    height: 40px; 
+}
+
+#table { 
+    background-color: rgba(79, 78, 78, 0.341);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+#linea th { 
+    background-color: brown; 
+    color: white; 
+}
