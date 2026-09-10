@@ -89,13 +89,18 @@ boton.addEventListener("click", async function() {
 
     try {
 
-        const respuesta = await fetch(URL_GOOGLE, {
+       const respuesta = await fetch(URL_GOOGLE, {
 
-            method: "POST",
+    method: "POST",
 
-            body: JSON.stringify(datos)
+    body: new URLSearchParams({
+        fecha: datos.fecha,
+        medida: datos.medida,
+        valor: datos.valor,
+        total: datos.total
+    })
 
-        });
+});
 
 
         const resultado = await respuesta.json();

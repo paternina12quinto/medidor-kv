@@ -1,50 +1,256 @@
-input { 
-    border-radius: 50px; 
-    background-color: rgb(242, 245, 244); 
-    display: block; 
-    margin: 0; 
-    width: 200px; 
-    height: 70px; 
-    text-align: center; 
-    border: 4px solid rgba(20, 165, 232, 0.808); 
+
+/* =========================
+   ESTILO GENERAL
+========================= */
+
+body {
+    background-color: #e8ecef;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.entrada { 
-    margin-top: 100px; 
-    display: flex; 
-    justify-content: center;
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #17202a;
+    padding: 12px 25px;
+
+    border-bottom: 4px solid #f1c40f;
 }
 
-nav { 
-    display: flex; 
-    justify-content: center; 
-    background-color: rgba(210, 31, 31, 0.788); 
+nav h1 {
+    color: #f1c40f;
+    margin: 0;
+    font-size: 26px;
 }
 
-body { 
-    background-color: rgba(121, 118, 118, 0.301); 
+
+/* =========================
+   FORMULARIO DE REGISTRO
+========================= */
+
+.registro-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-input::placeholder { 
-    color: rgb(12, 12, 12); 
+.registro-nav input {
+    width: 130px;
+    height: 32px;
+
+    border: 1px solid #566573;
+    border-radius: 5px;
+
+    padding: 5px 8px;
+
+    background-color: #f2f5f4;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.registro-nav input::placeholder {
+    color: #17202a;
     font-weight: bold;
-    font-size: 15px; 
+    font-size: 13px;
 }
 
-button { 
-    margin-top: 13px; 
-    margin-left: 10px; 
-    border-radius: 60px; 
-    height: 40px; 
+.registro-nav button {
+    margin: 0;
+
+    height: 32px;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 0 12px;
+
+    background-color: #f1c40f;
+    color: #17202a;
+
+    font-weight: bold;
+
+    cursor: pointer;
 }
 
-#table { 
-    background-color: rgba(79, 78, 78, 0.341);
+.registro-nav button:hover {
+    background-color: #d4ac0d;
+}
+
+
+/* =========================
+   ENTRADA DE MEDIDA
+========================= */
+
+.entrada {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Input principal del medidor */
+
+.entrada input {
+    border-radius: 50px;
+
+    background-color: rgb(242, 245, 244);
+
+    width: 200px;
+    height: 70px;
+
+    text-align: center;
+
+    border: 4px solid rgba(20, 165, 232, 0.808);
+
+    box-sizing: border-box;
+}
+
+
+/* Placeholder del medidor */
+
+.entrada input::placeholder {
+    color: rgb(12, 12, 12);
+
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   BOTÓN AGREGAR
+========================= */
+
+.entrada button {
+    margin-top: 13px;
+    margin-left: 10px;
+
+    border-radius: 60px;
+
+    height: 40px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    background-color: #17202a;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.entrada button:hover {
+    background-color: #f1c40f;
+    color: #17202a;
+}
+
+
+/* =========================
+   TABLA
+========================= */
+
+#table {
+    background-color: #ffffff;
+
     margin-top: 20px;
+
     padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-#linea th { 
-    background-color: brown; 
-    color: white; 
+
+/* Encabezado */
+
+#linea th {
+    background-color: #17202a;
+
+    color: #f1c40f;
+
+    border-bottom: 3px solid #f1c40f;
+}
+
+
+/* Celdas */
+
+#table td {
+    vertical-align: middle;
+}
+
+
+/* =========================
+   TOTAL ACUMULADO
+========================= */
+
+.total-general {
+    margin: 20px auto;
+
+    width: fit-content;
+
+    padding: 12px 25px;
+
+    background-color: #17202a;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+}
+
+.total-general strong {
+    color: #f1c40f;
+}
+
+#totalGeneral {
+    margin-left: 8px;
+
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .registro-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .registro-nav input {
+        width: 120px;
+    }
+
+    .entrada {
+        margin-top: 50px;
+    }
+
 }
