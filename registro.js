@@ -1,5 +1,5 @@
 
-const URL_GOOGLE = "https://script.google.com/macros/s/AKfycbyO4O4iXrnQVsP5nsxc_yi7nUNrCj7RoywPLq_qDHBwTDAp9tfgaUkvFkQ6d38Khrkf/exec";
+
 
 const usuario = document.getElementById("usuario");
 const contraseña = document.getElementById("contraseña");
